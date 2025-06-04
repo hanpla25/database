@@ -44,7 +44,7 @@ export default function DbForm() {
         <textarea
           name="text"
           id="text"
-          className="w-full pl-8 pr-4 py-2 border rounded-2xl focus:outline-none focus:ring resize-none"
+          className="w-full scrollbar-hide pl-8 pr-4 py-2 border rounded-2xl focus:outline-none focus:ring resize-none"
           rows={1}
           placeholder="내용을 입력하세요"
           ref={textareaRef}
