@@ -28,6 +28,10 @@ export async function login(
     .select("*")
     .eq("username", username)
     .single();
+    
+  console.log("username:", username);
+  console.log("user query result:", user);
+  console.log("supabase error:", error);
 
   if (error || !user) {
     console.log(error);
