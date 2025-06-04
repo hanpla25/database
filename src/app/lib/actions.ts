@@ -30,6 +30,7 @@ export async function login(
     .single();
 
   if (error || !user) {
+    console.log(error);
     return {
       message: "아이디가 일치하지 않습니다.",
     };
