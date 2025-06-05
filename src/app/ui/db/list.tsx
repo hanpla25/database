@@ -58,7 +58,9 @@ export default function List({ data }: ListProps) {
         >
           <div className="flex min-h-24">
             <div className="flex-1 mr-4">
-              <pre className="break-all text-sm">{list.text}</pre>
+              <p className="whitespace-pre-wrap break-all text-sm">
+                {list.text}
+              </p>
             </div>
             <div className="flex flex-col items-end justify-between shrink-0 text-right">
               {(list.attachments?.length ?? 0) > 0 && (
